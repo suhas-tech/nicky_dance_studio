@@ -42,9 +42,9 @@ app.use(express.static(path.join(__dirname, "build")));
 
 // server.listen(80);
 
-// app.get("/*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "build", "index.html"));
-// });
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 // const port = 8001
 //       app.listen(port, ()=>{
