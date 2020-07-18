@@ -3,25 +3,18 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const mongoose = require("mongoose");
-const https = require("https");
-const fs = require('fs');
-var http=require('http');
-
-const options = {
-  key: fs.readFileSync("../server.key"),
-  cert: fs.readFileSync("../server.cert"),
-};
+var http = require("http");
 
 const app = express();
 var cors = require("cors");
 app.use(cors());
-
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
 const mongo_uri = "mongodb://localhost/np-main";
+
 mongoose.connect(mongo_uri, { useNewUrlParser: true }, function (err) {
   if (err) {
     throw err;
@@ -32,27 +25,12 @@ mongoose.connect(mongo_uri, { useNewUrlParser: true }, function (err) {
 
 app.use(express.static(path.join(__dirname, "build")));
 
-// var server=http.createServer(function(req,res){
-//   res.end('test');
-// });
-
-// server.on('listening',function(){
-//   console.log('ok, server is running');
-// });
-
-// server.listen(80);
-
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-// const port = 8001
-//       app.listen(port, ()=>{
-//           console.log('listening at port 8443')
-// });
 
-https
-  .createServer(options, function (req, res) {
-    console.log("Server started");
-  })
-  .listen(443);
+const port = 8080;
+app.listen(port, () => {
+  console.log("listening at port 8080");
+});

@@ -16,7 +16,6 @@ const withAuth = function(req, res, next) {
       if (err) {
         res.status(401).send("Unauthorized: Invalid token");
       } else {
-        console.log(token);
         req.email = decoded.email;
         next();
       }
