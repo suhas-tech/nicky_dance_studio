@@ -13,15 +13,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-const mongo_uri = "mongodb://localhost/np-main";
+// const mongo_uri = "mongodb://localhost/np-main";
 
-mongoose.connect(mongo_uri, { useNewUrlParser: true }, function (err) {
-  if (err) {
-    throw err;
-  } else {
-    console.log(`Successfully connected to ${mongo_uri}`);
-  }
-});
+// mongoose.connect(mongo_uri, { useNewUrlParser: true }, function (err) {
+//   if (err) {
+//     throw err;
+//   } else {
+//     console.log(`Successfully connected to ${mongo_uri}`);
+//   }
+// });
 
 app.use(express.static(path.join(__dirname, "build")));
 

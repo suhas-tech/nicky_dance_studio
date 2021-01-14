@@ -11,7 +11,7 @@ import {
 } from "../../styles/commonStyles";
 import { TextField } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import * as Actions from "../../actions/actions"
+// import * as Actions from "../../actions/actions"
 
 import { useDispatch, useSelector } from "react-redux";
 
@@ -28,14 +28,14 @@ const ContactUs = () => {
     setUserLogin({ ...userLogin, [name]: e.target.value });
   };
 
-  const LoginHandler = () => {
-    dispatch(
-      Actions.login({
-        endPoint: `api/authenticate`,
-        data : userLogin
-      })
-    );
-  }
+  // const LoginHandler = () => {
+  //   dispatch(
+  //     Actions.login({
+  //       endPoint: `api/authenticate`,
+  //       data : userLogin
+  //     })
+  //   );
+  // }
 
   return (
     <div>
@@ -70,11 +70,11 @@ const ContactUs = () => {
               </InputWrapper>
 
           
-              <PositionRelative>
+              {/* <PositionRelative>
                 <SubmitButton onClick={LoginHandler} style={{ margin: "30px auto 0px" }}>
                   <span>Submit</span>
                 </SubmitButton>
-              </PositionRelative>
+              </PositionRelative> */}
             </FormContainer>
           </Grid>
         </Grid>

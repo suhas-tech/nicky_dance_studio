@@ -20,7 +20,7 @@ import { Grid } from "@material-ui/core";
 
 import { ImageUrl, VideoUrl } from "../../utils/url";
 
-import * as Actions from "../../actions/actions";
+// import * as Actions from "../../actions/actions";
 
 const Home = props => {
   const opts = {

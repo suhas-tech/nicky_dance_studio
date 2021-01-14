@@ -35,7 +35,7 @@ class Routes extends Component {
               <Route exact path='/socialMedia' component={Collaborations} />
               <Route exact path='/about' component={About} />
               <Route exact path='/adminLogin' component={AdminLogin} />
-              <Route exact path='/adminDashBoard' component={withAuth(ContactUs)} />
+              {/* <Route exact path='/adminDashBoard' component={withAuth(ContactUs)} /> */}
               <Route component={PageNotFound} />
             </Switch>
           </Router>
