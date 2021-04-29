@@ -1,23 +1,27 @@
 import React from "react";
 import { Router } from "react-router-dom";
-import Routes from "./routes/Routes";
+import Routes from "./router";
 import history from "../history";
 import { ThemeProvider } from "styled-components";
-import theme from "./styles/theme";
-import Header from "./commonComponent/Header/Header";
-import "./styles/styles.css";
-import Footer from "./commonComponent/Footer/Footer";
+import theme from "@theme/theme";
+import { Provider } from "react-redux";
+import { store } from "./store";
+import ErrorBoundary from "@components/ErrorBoundary";
+import { GlobalStyle } from "@theme/globalStyles";
 
-function App() {
-  return (
-    <Router history={history}>
-      <ThemeProvider theme={theme}>
-        <Header />
-        <Routes />
-        <Footer />
-      </ThemeProvider>
-    </Router>
-  );
-}
+const App = () => {
+    return (
+        <ErrorBoundary>
+            <Provider store={store}>
+                <Router history={history}>
+                    <ThemeProvider theme={theme}>
+                        <GlobalStyle />
+                        <Routes />
+                    </ThemeProvider>
+                </Router>
+            </Provider>
+        </ErrorBoundary>
+    );
+};
 
 export default App;

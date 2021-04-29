@@ -1,1 +1,93 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="favicon.png"/><link rel="manifest" href="/manifest.json"/><link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"><script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script><title>Nicky Pinto</title><link href="/static/css/main.10abbafd.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(f){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,i=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&i.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(f[t]=o[t]);for(s&&s(e);i.length;)i.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return f[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=f,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,"a",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p="/";var t=this.webpackJsonpclient=this.webpackJsonpclient||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src="/static/js/2.d3e47f6e.chunk.js"></script><script src="/static/js/main.0a37cdbf.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nicky Pinto Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+    <style>
+      body {
+        background: #f1f3f6;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: auto;
+        font-family: Nunito, sans-serif !important;
+        color: #464646;
+        line-height: 1.5;
+        overflow: auto !important;
+      }
+    </style>
+    <style>
+      #lds-ring {
+        display: inline-block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 35px;
+        height: 35px;
+        transform: translate(-50%, -50%);
+      }
+
+      #lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #fbad26;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #fbad26 transparent transparent transparent;
+      }
+
+      #lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+      }
+
+      #lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+
+      #lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+      }
+
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <base href="/" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="root"></div>
+    <script>
+      window.onload = function () {
+        document.getElementById("lds-ring").style.display = "none";
+        document.getElementById("root").style.display = "block";
+      };
+    </script>
+
+    <script src="/main.ed371219cb.js"></script>
+    <script src="/vendor.0dc10316c1.js"></script>
+  </body>
+</html>

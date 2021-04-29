@@ -1,213 +1,128 @@
 import React from "react";
+import { Container } from "@theme/common";
 import {
-  Container,
-  SubscribeButton,
-  YouTubeWrapper,
-  Button,
-  BlackBackground
-} from "../../styles/commonStyles";
-import YouTube from "react-youtube";
-import {
-  LogoVideoWrapper,
-  DisplayCenter,
-  TranslateLeft,
-  TranslateRight,
-  TeamDetails,
-  PositionRelative,
-  MarginY
+    HomeBanner,
+    Section,
+    SectionTitle,
+    SectionBody,
+    StyleCardSection,
+    MoreText,
+    VideosWrapper,
+    Area
 } from "./style";
-import { Grid } from "@material-ui/core";
 
-import { ImageUrl, VideoUrl } from "../../utils/url";
+import NP_LOGO from "@images/npLogo.png";
+import NP_PIC from "@images/NP.png";
+import PREVIEW from "@images/danceIllustrator.png";
 
-// import * as Actions from "../../actions/actions";
+import StyleCard from "@components/StyleCard";
 
-const Home = props => {
-  const opts = {
-    height: "100%",
-    width: "100%",
-    playerVars: {
-      autoplay: 0,
-      list: "PLW7SiZroZ_Arn6nKsUUiikwM04o8TBWqH",
-      iv_load_policy: 3,
-      rel: 0
-    }
-  };
+import { danceStyles, youTubeVideos } from "./constant";
 
-  const opts1 = {
-    height: "100%",
-    width: "100%",
+import YouTube from "react-youtube";
+const Home = (props) => {
+    const opts = {
+        height: "195",
+        width: "320",
+        playerVars: {
+            autoplay: 0,
+            iv_load_policy: 3,
+            rel: 0,
+        },
+    };
 
-    playerVars: {
-      autoplay: 0,
-      loop: 1,
-      iv_load_policy: 3,
-      enablejsapi: 1,
-      rel: 0
-    }
-  };
-
-  return (
-    <>
-      <LogoVideoWrapper>
-        <video muted autoPlay loop>
-          <source src={VideoUrl("logo_revel_main.mp4")} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </LogoVideoWrapper>
-      <Grid item container direction="row" justify="center" alignItems="center">
-        <SubscribeButton>Subscribe</SubscribeButton>
-      </Grid>
-      <Container>
-        <MarginY>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={3}
-          >
-            <Grid
-              item
-              direction="row"
-              justify="center"
-              alignItems="center"
-              xs={12}
-            >
-              <YouTubeWrapper>
-                <YouTube
-                  videoId="yRLeZnhpNSE"
-                  opts={opts1}
-                  // onReady={_onReady}
-                />
-              </YouTubeWrapper>
-            </Grid>
-          </Grid>
-        </MarginY>
-      </Container>
-
-      <Container>
-        <MarginY>
-          <DisplayCenter>
-            <Grid
-              container
-              direction="row"
-              justify="center"
-              alignItems="center"
-              spacing={3}
-            >
-              <Grid
-                item
-                direction="row"
-                justify="center"
-                alignItems="center"
-                xs={12}
-                md={6}
-              >
-                <div>
-                  <TranslateLeft src={ImageUrl("nicky.jpg")} />
+    return (
+        <React.Fragment>
+            <HomeBanner>
+                <div className="logo">
+                    <img src={NP_LOGO} alt="Logo" />
                 </div>
-              </Grid>
-              <Grid
-                item
-                direction="row"
-                justify="center"
-                alignItems="center"
-                xs={12}
-                md={6}
-              >
-                <TeamDetails>
-                  <p className="team"> Team Nicky Pinto</p>
-                  <p className="text"> Events/Workshops </p>
-                  <p className="booking">
-                    Bookings - nickypintoofficial@gmail.com
-                  </p>
-                  <>
-                    <PositionRelative className="bookNow">
-                      <Button>
-                        <span>Book Now</span>
-                      </Button>
-                    </PositionRelative>
-                  </>
-                </TeamDetails>
-              </Grid>
-            </Grid>
-          </DisplayCenter>
-        </MarginY>
-      </Container>
-      <BlackBackground>
-        <Container>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={3}
-          >
-            <Grid
-              item
-              direction="row"
-              justify="center"
-              alignItems="center"
-              xs={12}
-            >
-              <YouTubeWrapper>
-                <YouTube opts={opts} />
-              </YouTubeWrapper>
-            </Grid>
-          </Grid>
-        </Container>
-      </BlackBackground>
+                <div className="picture">
+                    <img src={NP_PIC} alt="Logo" />
+                </div>
+                <Area>
+                    <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </Area>
+            </HomeBanner>
+            <Section>
+                <Container>
+                    <SectionTitle>WHAT DO WE DO HERE?</SectionTitle>
+                    <SectionBody>
+                        <div className="text">
+                            <p className="highlight">
+                                We strive to help accomplish your goals one step
+                                at a time!
+                            </p>
 
-      <Container>
-        <MarginY>
-          <DisplayCenter>
-            <Grid
-              container
-              direction="row"
-              justify="center"
-              alignItems="center"
-              spacing={3}
-            >
-              <Grid
-                item
-                direction="row"
-                justify="center"
-                alignItems="center"
-                xs={12}
-                md={6}
-              >
-                <TeamDetails>
-                  <p className="team"> Nostalgia</p>
-                  <p className="text"> Events/Workshops </p>
-                  <p className="booking">
-                    Bookings - nostalgiaofficialtrio@gmail.com
-                  </p>
-                  <>
-                    <PositionRelative className="bookNow">
-                      <Button>
-                        <span>Book Now</span>
-                      </Button>
-                    </PositionRelative>
-                  </>
-                </TeamDetails>
-              </Grid>
-              <Grid
-                item
-                direction="row"
-                justify="center"
-                alignItems="center"
-                xs={12}
-                md={6}
-              >
-                <TranslateRight src={ImageUrl("nicky.jpg")} />
-              </Grid>
-            </Grid>
-          </DisplayCenter>
-        </MarginY>
-      </Container>
-    </>
-  );
+                            <p>
+                                We have a community of professionals and
+                                inspiring instructors. We will match you with an
+                                instructor with whom you feel at ease and whom
+                                you're excited to learn from. We will also work
+                                with your schedule and budget to ensure that the
+                                lessons are both, convenient and affordable.{" "}
+                            </p>
+                            <p>
+                                When we begin, we like to teach beginners the
+                                fundamentals of Hip Hop, Contemporary and House.
+                                This will include lessons on how to groove,
+                                warm-up, body control, freestyle and musicality,
+                                as well as an introduction on choreography to a
+                                song and perform it.
+                            </p>
+                            <p>
+                                We've developed unique lesson plans that have
+                                proven effective. From shuffle to contemporary,
+                                bollywood to open Style, and much more, we'll
+                                get you dancing in no time. Lessons are
+                                available online through "zoom" etc.
+                            </p>
+                        </div>
+                        <div className="image">
+                            <img src={PREVIEW} alt="Logo" />
+                        </div>
+                    </SectionBody>
+                </Container>
+            </Section>
+            <Section className="green-background">
+                <Container>
+                    <SectionTitle>OUR STYLES</SectionTitle>
+                    <StyleCardSection>
+                        {danceStyles.map((item) => {
+                            return <StyleCard {...item} />;
+                        })}
+                    </StyleCardSection>
+                    <MoreText>{"& more..."}</MoreText>
+                </Container>
+            </Section>
+            <Section>
+                <Container>
+                    <SectionTitle>CHECKOUT OUR VIDEOS</SectionTitle>
+                    <VideosWrapper>
+                        {youTubeVideos.map((item) => {
+                            return (
+                                <div>
+                                    {" "}
+                                    <YouTube videoId={item.id} opts={opts} />
+                                </div>
+                            );
+                        })}
+                    </VideosWrapper>
+                </Container>
+            </Section>
+        </React.Fragment>
+    );
 };
 
 export default Home;

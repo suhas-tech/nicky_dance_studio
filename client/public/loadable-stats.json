@@ -1,0 +1,239 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.42.1",
+  "hash": "7492fd1d9358c52d5fcc",
+  "publicPath": "",
+  "outputPath": "/home/suhas/Suhas/nicky/client/public/",
+  "assetsByChunkName": {
+    "vendors~Login~Register": "vendors~Login~Register.5e7f7f0e12.js",
+    "Home": "Home.564e97b016.js",
+    "Login": "Login.e03ca36e56.js",
+    "PageNotFound": "PageNotFound.10ff901911.js",
+    "Register": "Register.0527031716.js",
+    "main": "main.ed371219cb.js",
+    "vendor": "vendor.0dc10316c1.js",
+    "vendors~Home": "vendors~Home.74d146cb58.js"
+  },
+  "assets": [
+    {
+      "name": "Home.564e97b016.js",
+      "size": 11798,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "Home"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "Login.e03ca36e56.js",
+      "size": 2288,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "Login"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "PageNotFound.10ff901911.js",
+      "size": 685,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "PageNotFound"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "Register.0527031716.js",
+      "size": 5842,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "Register"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/109eab89-npLogo.png",
+      "size": 8232,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/4ab97b8e-danceIllustrator.png",
+      "size": 484216,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/cf760e3f-NP.png",
+      "size": 2272005,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "main.ed371219cb.js",
+      "size": 26534,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor.0dc10316c1.js",
+      "size": 249882,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [
+        "vendor"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendors~Home.74d146cb58.js",
+      "size": 17328,
+      "chunks": [
+        7
+      ],
+      "chunkNames": [
+        "vendors~Home"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendors~Login~Register.5e7f7f0e12.js",
+      "size": 140150,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "vendors~Login~Register"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        6,
+        5
+      ],
+      "assets": [
+        "vendor.0dc10316c1.js",
+        "main.ed371219cb.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        6,
+        5
+      ],
+      "assets": [
+        "vendor.0dc10316c1.js",
+        "main.ed371219cb.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "Home": {
+      "chunks": [
+        7,
+        1
+      ],
+      "assets": [
+        "vendors~Home.74d146cb58.js",
+        "Home.564e97b016.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "Login": {
+      "chunks": [
+        0,
+        2
+      ],
+      "assets": [
+        "vendors~Login~Register.5e7f7f0e12.js",
+        "Login.e03ca36e56.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "Register": {
+      "chunks": [
+        0,
+        4
+      ],
+      "assets": [
+        "vendors~Login~Register.5e7f7f0e12.js",
+        "Register.0527031716.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "PageNotFound": {
+      "chunks": [
+        3
+      ],
+      "assets": [
+        "PageNotFound.10ff901911.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
