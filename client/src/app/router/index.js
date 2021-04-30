@@ -4,11 +4,15 @@ import Routes from "./Routes";
 import Header from "./Header";
 import Footer from "./Footer";
 
+import {PlayArea} from "./style";
+
 const Router = (props) => {
     return (
         <React.Fragment>
             <Header />
-            <Routes />
+            <PlayArea>
+                <Routes />
+            </PlayArea>
             <Footer />
         </React.Fragment>
     );

@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, NavLink, useHistory } from "react-router-dom";
 
-import { HeaderWrapper, Nav, Logo, NavLogin, NavButton } from "./style";
+import {
+    HeaderWrapper,
+    Nav,
+    Logo,
+    NavLogin,
+    NavButton,
+    ContactUs,
+} from "./style";
 
 import NP_LOGO from "@images/npLogo.png";
 
@@ -10,11 +17,11 @@ const Header = (props) => {
 
     return (
         <HeaderWrapper>
-            <Logo>
+            <Logo onClick={() => history.push("/")}>
                 <img src={NP_LOGO} alt="Logo" />
             </Logo>
 
-            <Nav>
+            <Nav >
                 <ul>
                     <li>
                         <NavLink
@@ -26,7 +33,7 @@ const Header = (props) => {
                             Home
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink
                             exact
                             className="navLink"
@@ -35,12 +42,12 @@ const Header = (props) => {
                         >
                             Dance Class
                         </NavLink>
-                    </li>
+                    </li> */}
                 </ul>
             </Nav>
 
             <NavLogin>
-                <NavButton
+                {/* <NavButton
                     onClick={() => history.push("/login")}
                     className="login"
                 >
@@ -51,7 +58,8 @@ const Header = (props) => {
                     className="register"
                 >
                     Register
-                </NavButton>
+                </NavButton> */}
+                <ContactUs>Contact us</ContactUs>
             </NavLogin>
         </HeaderWrapper>
     );

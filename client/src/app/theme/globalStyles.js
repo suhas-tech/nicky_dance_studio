@@ -201,6 +201,8 @@ html {
 
         :hover {
             opacity: 0.6;
+        text-decoration: underline;
+
         }
     }
 

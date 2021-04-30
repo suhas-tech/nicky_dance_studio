@@ -23,6 +23,10 @@ export const Nav = styled.nav`
             letter-spacing: 1px;
         }
     }
+
+    @media (max-width: 425px) {
+        display: none;
+    }
 `;
 
 export const Logo = styled.div`
@@ -111,7 +115,19 @@ export const NavButton = styled.div`
         color: #000;
         padding: 8px 20px;
         margin: 7px 0;
-        cursor:pointer;
-
+        cursor: pointer;
     }
+`;
+
+export const ContactUs = styled.div`
+    border: 1px solid ${(props) => props.theme.colors.white};
+    border-radius: 4px;
+    padding: 8px 20px;
+    margin: 7px 0;
+    margin-right: 10px;
+    cursor: pointer;
+`;
+
+export const PlayArea = styled.div`
+    min-height: calc(100vh - 260px);
 `;

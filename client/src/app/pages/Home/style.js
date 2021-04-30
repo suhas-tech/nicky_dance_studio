@@ -8,17 +8,53 @@ export const HomeBanner = styled.div`
     display: flex;
     justify-content: center;
     max-height: 500px;
-    height: 350px;
+    min-height: 350px;
     padding: 20px;
     & .logo {
         display: flex;
         align-items: center;
     }
     & .picture {
+        display: flex;
+        align-items: center;
         > img {
             height: 350px;
             width: 310px;
             object-fit: contain;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        min-height: 300px;
+        & .logo {
+            > img {
+                max-height: 200px;
+                object-fit: contain;
+            }
+        }
+        & .picture {
+            > img {
+                height: 250px;
+                width: 210px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        min-height: 200px;
+        & .logo {
+            > img {
+                max-height: 100px;
+                object-fit: contain;
+            }
+        }
+        & .picture {
+            > img {
+                height: 150px;
+                width: 210px;
+                object-fit: contain;
+            }
         }
     }
 `;
@@ -43,15 +79,14 @@ export const Section = styled.div`
     padding: 60px 0;
 
     &.green-background {
-        background-color: #9bdc2830;
+        background-color: ${(props) => props.theme.colors.primary};
+        color: ${(props) => props.theme.colors.white};
     }
 `;
 
 export const SectionTitle = styled.div`
     margin: 10px auto 20px;
-    font-size: 22px;
-    color: ${(props) => props.theme.colors.primary};
-    opacity: 0.8;
+    font-size: 36px;
     font-weight: 800;
     display: flex;
     padding-bottom: 10px;
@@ -63,8 +98,8 @@ export const SectionBody = styled.div`
     color: ${(props) => props.theme.colors.black};
     opacity: 0.8;
     font-weight: 500;
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: flex;
+
     & .highlight {
         font-size: 20px;
         font-weight: 600;
@@ -73,16 +108,33 @@ export const SectionBody = styled.div`
     & p {
         margin: 25px 0;
     }
+    & .image {
+        width: 100%;
+        height: 100%;
+    }
 
     & .image img {
         width: 100%;
-        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 767px) {
+        display: flex;
+
+        & .image {
+            display: none;
+        }
+
+        & .image img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 `;
 
 export const StyleCardSection = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     justify-content: space-between;
     grid-gap: 20px;
 `;
@@ -222,7 +274,7 @@ export const Area = styled.div`
 
 export const InstructorWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
     margin: auto;
 `;
@@ -245,9 +297,9 @@ export const InstructorCard = styled.div`
         position: absolute;
         bottom: 0;
         width: 100%;
-        color:#fff;
-        font-size:18px;
+        color: #fff;
+        font-size: 18px;
         font-weight: 600;
-        text-align:center;
+        text-align: center;
     }
 `;

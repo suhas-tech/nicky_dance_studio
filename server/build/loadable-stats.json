@@ -2,23 +2,23 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.1",
-  "hash": "61800ebb091f2b25753f",
+  "hash": "8396fe402358132146bf",
   "publicPath": "",
   "outputPath": "/home/suhas/Suhas/nicky/client/build/",
   "assetsByChunkName": {
-    "vendors~Login~Register": "vendors~Login~Register.71f28ddf15.js",
-    "Home": "Home.20d12e292d.js",
+    "vendors~Login~Register": "vendors~Login~Register.02c78401ad.js",
+    "Home": "Home.d67368b213.js",
     "Login": "Login.31a9110f34.js",
-    "PageNotFound": "PageNotFound.815ef79425.js",
+    "PageNotFound": "PageNotFound.4542e49dfa.js",
     "Register": "Register.a8653f34aa.js",
-    "main": "main.128778796a.js",
-    "vendor": "vendor.1ebae62f81.js",
+    "main": "main.cf5621293e.js",
+    "vendor": "vendor.dfea2a7cc7.js",
     "vendors~Home": "vendors~Home.74d146cb58.js"
   },
   "assets": [
     {
-      "name": "Home.20d12e292d.js",
-      "size": 13500,
+      "name": "Home.d67368b213.js",
+      "size": 18013,
       "chunks": [
         1
       ],
@@ -45,8 +45,8 @@
       "emitted": false
     },
     {
-      "name": "PageNotFound.815ef79425.js",
-      "size": 685,
+      "name": "PageNotFound.4542e49dfa.js",
+      "size": 4050,
       "chunks": [
         3
       ],
@@ -81,8 +81,8 @@
       "emitted": false
     },
     {
-      "name": "images/32af2031-Instructor2.jpg",
-      "size": 440007,
+      "name": "images/26c73614-Instructor5.jpg",
+      "size": 4242523,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -97,24 +97,24 @@
       "emitted": false
     },
     {
-      "name": "images/a75326e8-Instructor1.jpg",
-      "size": 580307,
+      "name": "images/78eae5e8-Instructor1.jpg",
+      "size": 3927532,
       "chunks": [],
       "chunkNames": [],
       "info": {},
       "emitted": false
     },
     {
-      "name": "images/b1077215-Instructor3.jpg",
-      "size": 346659,
+      "name": "images/d429857e-Instructor3.jpg",
+      "size": 3554623,
       "chunks": [],
       "chunkNames": [],
       "info": {},
       "emitted": false
     },
     {
-      "name": "images/d5540d52-Instructor4.jpg",
-      "size": 324214,
+      "name": "images/db8bb96d-Instructor4.jpg",
+      "size": 2147679,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -129,8 +129,16 @@
       "emitted": false
     },
     {
-      "name": "main.128778796a.js",
-      "size": 26531,
+      "name": "images/f71e7154-Instructor2.jpg",
+      "size": 3436646,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "main.cf5621293e.js",
+      "size": 26705,
       "chunks": [
         5
       ],
@@ -143,7 +151,7 @@
       "emitted": false
     },
     {
-      "name": "vendor.1ebae62f81.js",
+      "name": "vendor.dfea2a7cc7.js",
       "size": 249882,
       "chunks": [
         6
@@ -171,7 +179,7 @@
       "emitted": false
     },
     {
-      "name": "vendors~Login~Register.71f28ddf15.js",
+      "name": "vendors~Login~Register.02c78401ad.js",
       "size": 140150,
       "chunks": [
         0
@@ -193,8 +201,8 @@
         5
       ],
       "assets": [
-        "vendor.1ebae62f81.js",
-        "main.128778796a.js"
+        "vendor.dfea2a7cc7.js",
+        "main.cf5621293e.js"
       ],
       "children": {},
       "childAssets": {}
@@ -207,8 +215,8 @@
         5
       ],
       "assets": [
-        "vendor.1ebae62f81.js",
-        "main.128778796a.js"
+        "vendor.dfea2a7cc7.js",
+        "main.cf5621293e.js"
       ],
       "children": {},
       "childAssets": {}
@@ -220,7 +228,7 @@
       ],
       "assets": [
         "vendors~Home.74d146cb58.js",
-        "Home.20d12e292d.js"
+        "Home.d67368b213.js"
       ],
       "children": {},
       "childAssets": {}
@@ -231,7 +239,7 @@
         2
       ],
       "assets": [
-        "vendors~Login~Register.71f28ddf15.js",
+        "vendors~Login~Register.02c78401ad.js",
         "Login.31a9110f34.js"
       ],
       "children": {},
@@ -243,7 +251,7 @@
         4
       ],
       "assets": [
-        "vendors~Login~Register.71f28ddf15.js",
+        "vendors~Login~Register.02c78401ad.js",
         "Register.a8653f34aa.js"
       ],
       "children": {},
@@ -254,7 +262,7 @@
         3
       ],
       "assets": [
-        "PageNotFound.815ef79425.js"
+        "PageNotFound.4542e49dfa.js"
       ],
       "children": {},
       "childAssets": {}

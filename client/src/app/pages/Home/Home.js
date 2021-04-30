@@ -21,7 +21,8 @@ import Instructor1 from "@images/Instructor1.jpg";
 import Instructor2 from "@images/Instructor2.jpg";
 import Instructor3 from "@images/Instructor3.jpg";
 import Instructor4 from "@images/Instructor4.jpg";
-// import Instructor from "@images/NP.png";
+import Instructor5 from "@images/Instructor5.jpg";
+
 
 import StyleCard from "@components/StyleCard";
 
@@ -135,7 +136,7 @@ const Home = (props) => {
                             <div className="nameTag">Suneira Mendonsa</div>
                         </InstructorCard>
                         <InstructorCard>
-                            <img src={Instructor1} alt="Logo" />
+                            <img src={Instructor5} alt="Logo" />
                             <div className="nameTag">Gavin Rodrigues</div>
                         </InstructorCard>
                     </InstructorWrapper>
