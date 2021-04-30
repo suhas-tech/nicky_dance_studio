@@ -177,7 +177,7 @@ html {
     }
 
     body {
-        background: #F1F3F6;
+        background: #fff;
         font-family: Nunito, sans-serif !important;
         font-size: 16px;
         font-weight: 400;

@@ -219,3 +219,35 @@ export const Area = styled.div`
         }
     }
 `;
+
+export const InstructorWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 20px;
+    margin: auto;
+`;
+
+export const InstructorCard = styled.div`
+    & > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        object-fit: contain;
+    }
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    overflow: hidden;
+
+    & .nameTag {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color:#fff;
+        font-size:18px;
+        font-weight: 600;
+        text-align:center;
+    }
+`;

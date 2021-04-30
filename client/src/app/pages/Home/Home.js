@@ -8,12 +8,20 @@ import {
     StyleCardSection,
     MoreText,
     VideosWrapper,
-    Area
+    InstructorWrapper,
+    Area,
+    InstructorCard,
 } from "./style";
 
 import NP_LOGO from "@images/npLogo.png";
 import NP_PIC from "@images/NP.png";
 import PREVIEW from "@images/danceIllustrator.png";
+
+import Instructor1 from "@images/Instructor1.jpg";
+import Instructor2 from "@images/Instructor2.jpg";
+import Instructor3 from "@images/Instructor3.jpg";
+import Instructor4 from "@images/Instructor4.jpg";
+// import Instructor from "@images/NP.png";
 
 import StyleCard from "@components/StyleCard";
 
@@ -107,6 +115,33 @@ const Home = (props) => {
                 </Container>
             </Section>
             <Section>
+                <Container>
+                    <SectionTitle>OUR INSTRUCTORS</SectionTitle>
+                    <InstructorWrapper>
+                        <InstructorCard>
+                            <img src={Instructor1} alt="Logo" />
+                            <div className="nameTag">Trisha Rai</div>
+                        </InstructorCard>
+                        <InstructorCard>
+                            <img src={Instructor2} alt="Logo" />
+                            <div className="nameTag">Jerusha Maben</div>
+                        </InstructorCard>
+                        <InstructorCard>
+                            <img src={Instructor3} alt="Logo" />
+                            <div className="nameTag">Sejal Alva</div>
+                        </InstructorCard>
+                        <InstructorCard>
+                            <img src={Instructor4} alt="Logo" />
+                            <div className="nameTag">Suneira Mendonsa</div>
+                        </InstructorCard>
+                        <InstructorCard>
+                            <img src={Instructor1} alt="Logo" />
+                            <div className="nameTag">Gavin Rodrigues</div>
+                        </InstructorCard>
+                    </InstructorWrapper>
+                </Container>
+            </Section>
+            <Section className="green-background">
                 <Container>
                     <SectionTitle>CHECKOUT OUR VIDEOS</SectionTitle>
                     <VideosWrapper>
