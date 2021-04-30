@@ -147,7 +147,7 @@ export const MoreText = styled.div`
 
 export const VideosWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
     & > div {
         transform: translateZ(-939px) perspective(1210px) rotateY(-327deg)

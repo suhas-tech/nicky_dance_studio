@@ -42,7 +42,7 @@ export const Logo = styled.div`
 export const FooterWrapper = styled.footer`
     background-color: #000;
     color: #fff;
-    height: 200px;
+    min-height: 200px;
     position: relative;
     .h-100 {
         height: 100%;
@@ -53,7 +53,7 @@ export const SocialIconsWrapper = styled.div`
     margin: 0 auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 30px 30px 30px 30px 30px;
+    grid-template-columns: 30px 30px 30px 30px;
     & .icon {
         width: 30px;
         height: 30px;
@@ -67,6 +67,10 @@ export const CreatedByLabel = styled.p`
 
     font-weight: 600;
     padding-top: 20px;
+
+    @media (max-width: 425px) {
+        text-align: center;
+    }
 `;
 
 export const TwoColumnWrapper = styled.div`
@@ -90,6 +94,19 @@ export const TwoColumnWrapper = styled.div`
         font-weight: 600;
         text-align: right;
         opacity: 0.7;
+    }
+
+    @media (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 40% 60%;
+
+        & .quotes {
+            margin: 20px 0;
+            text-align: center;
+        }
     }
 `;
 
