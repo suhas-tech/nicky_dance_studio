@@ -25,16 +25,15 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "build")));
 
+app.get("/files/:id", function (req, res) {
+  res.sendFile(path.join(__dirname, "files", req.params.id));
+});
+
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
-
 
 const port = 4000;
 app.listen(port, () => {
   console.log("listening at port 4000");
 });
-
-
-  
-  
