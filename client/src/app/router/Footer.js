@@ -7,7 +7,7 @@ import {
     CreatedByLabel,
 } from "./style";
 
-import NP_LOGO from "@images/npLogo.png";
+import NP_STUDIO from "@images/npStudio.png";
 import YouTube from "@svg/YouTube";
 import Instagram from "@svg/Instagram";
 import Twitter from "@svg/Twitter";
@@ -20,8 +20,9 @@ const Footer = () => {
                 <TwoColumnWrapper>
                     <div className="one-column">
                         <div className="footer-logo">
-                            <img src={NP_LOGO} alt="Logo" />
+                            <img src={NP_STUDIO} alt="Logo" />
                         </div>
+                        <div>
                         <SocialIconsWrapper>
                             <div
                                 onClick={() => {
@@ -69,6 +70,7 @@ const Footer = () => {
                             </div>
                         </SocialIconsWrapper>
                         <CreatedByLabel>CREATED BY SUHAS</CreatedByLabel>
+                        </div>
                     </div>
                     <div className="two-column">
                         <div className="quotes">

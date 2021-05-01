@@ -81,8 +81,10 @@ export const CreatedByLabel = styled.p`
 
 export const TwoColumnWrapper = styled.div`
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 180px auto;
     & .one-column {
+        display: flex;
+        align-items: center;
     }
 
     & .two-column {
@@ -92,8 +94,7 @@ export const TwoColumnWrapper = styled.div`
         justify-content: flex-end;
     }
     & .footer-logo img {
-        padding-top: 20px;
-        height: 80px;
+        height: 180px;
     }
 
     & .quotes {
@@ -102,12 +103,11 @@ export const TwoColumnWrapper = styled.div`
         opacity: 0.7;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 1080px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        grid-template-columns: 40% 60%;
 
         & .quotes {
             margin: 20px 0;

@@ -2,23 +2,23 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.1",
-  "hash": "820dfafd1e6461fb9533",
+  "hash": "ab8284ec3b79708b14e9",
   "publicPath": "",
   "outputPath": "/home/suhas/Suhas/nicky/client/build/",
   "assetsByChunkName": {
-    "vendors~Login~Register": "vendors~Login~Register.5a2167b572.js",
-    "Home": "Home.b1a20ff4e4.js",
-    "Login": "Login.cf21301770.js",
-    "PageNotFound": "PageNotFound.93ec3e7e53.js",
-    "Register": "Register.f008b7a4c9.js",
-    "main": "main.6d02ac48cd.js",
-    "vendor": "vendor.e8a0c60417.js",
-    "vendors~Home": "vendors~Home.44ecbacbf9.js"
+    "vendors~Login~Register": "vendors~Login~Register.c7958c4e68.js",
+    "Home": "Home.455e7c916b.js",
+    "Login": "Login.3d8abb2d57.js",
+    "PageNotFound": "PageNotFound.6b521190aa.js",
+    "Register": "Register.7f61468991.js",
+    "main": "main.f6601d8fc9.js",
+    "vendor": "vendor.238013807e.js",
+    "vendors~Home": "vendors~Home.183e703e92.js"
   },
   "assets": [
     {
-      "name": "Home.b1a20ff4e4.js",
-      "size": 24178,
+      "name": "Home.455e7c916b.js",
+      "size": 24320,
       "chunks": [
         1
       ],
@@ -31,7 +31,7 @@
       "emitted": false
     },
     {
-      "name": "Login.cf21301770.js",
+      "name": "Login.3d8abb2d57.js",
       "size": 2288,
       "chunks": [
         2
@@ -45,7 +45,7 @@
       "emitted": false
     },
     {
-      "name": "PageNotFound.93ec3e7e53.js",
+      "name": "PageNotFound.6b521190aa.js",
       "size": 4051,
       "chunks": [
         3
@@ -59,7 +59,7 @@
       "emitted": false
     },
     {
-      "name": "Register.f008b7a4c9.js",
+      "name": "Register.7f61468991.js",
       "size": 3875,
       "chunks": [
         4
@@ -129,8 +129,8 @@
       "emitted": false
     },
     {
-      "name": "main.6d02ac48cd.js",
-      "size": 45644,
+      "name": "main.f6601d8fc9.js",
+      "size": 53232,
       "chunks": [
         5
       ],
@@ -143,8 +143,8 @@
       "emitted": false
     },
     {
-      "name": "vendor.e8a0c60417.js",
-      "size": 359996,
+      "name": "vendor.238013807e.js",
+      "size": 359993,
       "chunks": [
         6
       ],
@@ -157,7 +157,7 @@
       "emitted": false
     },
     {
-      "name": "vendors~Home.44ecbacbf9.js",
+      "name": "vendors~Home.183e703e92.js",
       "size": 17327,
       "chunks": [
         7
@@ -171,8 +171,8 @@
       "emitted": false
     },
     {
-      "name": "vendors~Login~Register.5a2167b572.js",
-      "size": 48850,
+      "name": "vendors~Login~Register.c7958c4e68.js",
+      "size": 48848,
       "chunks": [
         0
       ],
@@ -193,8 +193,8 @@
         5
       ],
       "assets": [
-        "vendor.e8a0c60417.js",
-        "main.6d02ac48cd.js"
+        "vendor.238013807e.js",
+        "main.f6601d8fc9.js"
       ],
       "children": {},
       "childAssets": {}
@@ -207,8 +207,8 @@
         5
       ],
       "assets": [
-        "vendor.e8a0c60417.js",
-        "main.6d02ac48cd.js"
+        "vendor.238013807e.js",
+        "main.f6601d8fc9.js"
       ],
       "children": {},
       "childAssets": {}
@@ -219,8 +219,8 @@
         1
       ],
       "assets": [
-        "vendors~Home.44ecbacbf9.js",
-        "Home.b1a20ff4e4.js"
+        "vendors~Home.183e703e92.js",
+        "Home.455e7c916b.js"
       ],
       "children": {},
       "childAssets": {}
@@ -231,8 +231,8 @@
         2
       ],
       "assets": [
-        "vendors~Login~Register.5a2167b572.js",
-        "Login.cf21301770.js"
+        "vendors~Login~Register.c7958c4e68.js",
+        "Login.3d8abb2d57.js"
       ],
       "children": {},
       "childAssets": {}
@@ -243,8 +243,8 @@
         4
       ],
       "assets": [
-        "vendors~Login~Register.5a2167b572.js",
-        "Register.f008b7a4c9.js"
+        "vendors~Login~Register.c7958c4e68.js",
+        "Register.7f61468991.js"
       ],
       "children": {},
       "childAssets": {}
@@ -254,7 +254,7 @@
         3
       ],
       "assets": [
-        "PageNotFound.93ec3e7e53.js"
+        "PageNotFound.6b521190aa.js"
       ],
       "children": {},
       "childAssets": {}

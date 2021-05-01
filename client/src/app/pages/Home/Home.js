@@ -78,22 +78,24 @@ const Home = (props) => {
                     <SectionBody>
                         <div className="text">
                             <p className="highlight">
-                                We strive to help accomplish your goals one step
-                                at a time!
+                                At Nicky Pinto Studio, we Vibe differently!
                             </p>
 
                             <p>
-                                We have a community of professionals and
-                                inspiring instructors. We will match you with an
-                                instructor with whom you feel at ease and whom
-                                you're excited to learn from. We will also work
-                                with your schedule and budget to ensure that the
-                                lessons are both, convenient and affordable.{" "}
+                                We are a community of professional and inspiring
+                                instructors who offer a fun, exciting & engaging
+                                way of learning varied dance styles. We take
+                                part in your dance journey by helping you
+                                associate with instructors of your choice with
+                                whom you feel at ease and excited to learn from.
+                                We will also work with your schedule and budget
+                                to ensure that the sessions are both, convenient
+                                and affordable.
                             </p>
                             <p>
                                 When we begin, we like to teach beginners the
                                 fundamentals of Hip Hop, Contemporary and House.
-                                This will include lessons on how to groove,
+                                This will include sessions on how to groove,
                                 warm-up, body control, freestyle and musicality,
                                 as well as an introduction on choreography to a
                                 song and perform it.
@@ -101,9 +103,9 @@ const Home = (props) => {
                             <p>
                                 We've developed unique lesson plans that have
                                 proven effective. From shuffle to contemporary,
-                                bollywood to open Style, and much more, we'll
-                                get you dancing in no time. Lessons are
-                                available online through "zoom" etc.
+                                bollywood to open style, and much more, we'll
+                                get you dancing in no time. Sessions are
+                                available online through Zoom.
                             </p>
                         </div>
                         <div className="image">
@@ -330,7 +332,7 @@ const Home = (props) => {
                                 </b>
                             </div>
                             <div className="dancer">
-                                by <b>Suneira</b>
+                                by <b>Gavin</b>
                             </div>
                         </BatchInfoCard>
                     </BatchInfoWrapper>
@@ -400,7 +402,7 @@ const Home = (props) => {
                 <Container>
                     <SectionTitle className="center">Testimonials</SectionTitle>
                     <SectionDescription className="center">
-                        Our students love us! Read what they have to say below.
+                        Our students love us! Read what they have to say.
                     </SectionDescription>
                     <TestimonialsSection>
                         {testimonials.map((testimonial) => {

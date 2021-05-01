@@ -141,8 +141,9 @@ export const SectionBody = styled.div`
     color: ${(props) => props.theme.colors.black};
     opacity: 0.8;
     font-weight: 500;
-    display: flex;
-
+    display: grid;
+    grid-template-columns: auto 40%;
+    align-items:center;
     & .highlight {
         font-size: 20px;
         font-weight: 600;
@@ -152,7 +153,7 @@ export const SectionBody = styled.div`
         margin: 25px 0;
     }
     & .image {
-        width: 100%;
+        width:100%;
         height: 100%;
     }
 
