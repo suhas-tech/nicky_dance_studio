@@ -12,15 +12,17 @@ export const Nav = styled.nav`
         border-bottom: 2px solid ${(props) => props.theme.colors.secondary};
         color: #fff;
     }
-    ul {
-        display: flex;
-        justify-content: flex-end;
 
-        li .navLink {
-            display: block;
-            padding: 15px 20px;
-            font-weight: 600;
-            letter-spacing: 1px;
+    display: flex;
+    justify-content: flex-end;
+
+    .navLink {
+        display: block;
+        padding: 15px 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        &:hover {
+            text-decoration: none;
         }
     }
 
@@ -32,9 +34,12 @@ export const Nav = styled.nav`
 export const Logo = styled.div`
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
     img {
-        width: auto;
+        width: 55px;
         height: 55px;
     }
 `;
@@ -57,6 +62,7 @@ export const SocialIconsWrapper = styled.div`
     & .icon {
         width: 30px;
         height: 30px;
+        cursor: pointer;
     }
     @media (max-width: 425px) {
     }

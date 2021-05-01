@@ -42,7 +42,6 @@ kbd,
 q,
 s,
 samp,
-small,
 strike,
 strong,
 sub,
@@ -97,6 +96,17 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  word-break: break-word;
+}
+
+small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 0.8rem;
+  vertical-align: baseline;
+  word-break: break-word;
 }
 /****** Elad Shechter's RESET *******/
 /*** box sizing border-box for all elements ***/

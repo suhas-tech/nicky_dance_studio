@@ -23,16 +23,48 @@ const Footer = () => {
                             <img src={NP_LOGO} alt="Logo" />
                         </div>
                         <SocialIconsWrapper>
-                            <div className="icon">
+                            <div
+                                onClick={() => {
+                                    window.open(
+                                        "https://youtube.com/channel/UCiHET6ltJyANAI7P_m8JWNw",
+                                        "_blank"
+                                    );
+                                }}
+                                className="icon"
+                            >
                                 <YouTube />
                             </div>
-                            <div className="icon">
+                            <div
+                                onClick={() => {
+                                    window.open(
+                                        "https://www.instagram.com/nickypintostudio/?hl=en",
+                                        "_blank"
+                                    );
+                                }}
+                                className="icon"
+                            >
                                 <Instagram />
                             </div>
-                            <div className="icon">
+                            <div
+                                onClick={() => {
+                                    window.open(
+                                        "https://twitter.com/pinto_studio?s=08",
+                                        "_blank"
+                                    );
+                                }}
+                                className="icon"
+                            >
                                 <Twitter />
                             </div>
-                            <div className="icon">
+                            <div
+                                onClick={() => {
+                                    window.open(
+                                        "https://www.facebook.com/NickyPintoStudio",
+                                        "_blank"
+                                    );
+                                }}
+                                className="icon"
+                            >
                                 <Facebook />
                             </div>
                         </SocialIconsWrapper>

@@ -1,9 +1,12 @@
 import React from "react";
+
 import { Container } from "@theme/common";
+
 import {
     HomeBanner,
     Section,
     SectionTitle,
+    SectionDescription,
     SectionBody,
     StyleCardSection,
     MoreText,
@@ -11,6 +14,10 @@ import {
     InstructorWrapper,
     Area,
     InstructorCard,
+    RegisterBodySection,
+    TestimonialsSection,
+    BatchInfoWrapper,
+    BatchInfoCard,
 } from "./style";
 
 import NP_LOGO from "@images/npLogo.png";
@@ -23,10 +30,11 @@ import Instructor3 from "@images/Instructor3.jpg";
 import Instructor4 from "@images/Instructor4.jpg";
 import Instructor5 from "@images/Instructor5.jpg";
 
-
 import StyleCard from "@components/StyleCard";
 
-import { danceStyles, youTubeVideos } from "./constant";
+import { danceStyles, youTubeVideos, testimonials } from "./constant";
+
+import Button from "@material-ui/core/Button";
 
 import YouTube from "react-youtube";
 const Home = (props) => {
@@ -144,6 +152,237 @@ const Home = (props) => {
             </Section>
             <Section className="green-background">
                 <Container>
+                    <SectionTitle>BATCH INFO</SectionTitle>
+                    <BatchInfoWrapper>
+                        <BatchInfoCard>
+                            <div className="genre">
+                                <p> Genre</p>
+                                <b>
+                                    <ul>
+                                        <li>Open Style</li>
+                                        <li>Bollywood</li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="timing">
+                                <p> Timings</p>
+                                <b>
+                                    <ul>
+                                        <li>
+                                            Tue & Thu 4.30 - 5.30 PM{" "}
+                                            <p className="italic">
+                                                [India IST]
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Sat & Sun 3 - 4 PM{" "}
+                                            <p className="italic">
+                                                {" "}
+                                                [Saskatoon CST- UTC6]
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Sat & Sun 5 - 6 PM{" "}
+                                            <p className="italic">
+                                                [Toronto EDT - UTC4]
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="dancer">
+                                by <b>Trisha</b>
+                            </div>
+                        </BatchInfoCard>
+                        <BatchInfoCard>
+                            <div className="genre">
+                                <p> Genre</p>
+                                <b>
+                                    <ul>
+                                        <li>Shuffle</li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="timing">
+                                <p> Timings</p>
+                                <b>
+                                    <ul>
+                                        <li>
+                                            Tue & Thu 5.45 - 6.45 PM{" "}
+                                            <p className="italic">
+                                                [India IST]
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Tue & Thu 3 - 4 PM{" "}
+                                            <p className="italic">
+                                                {" "}
+                                                [Saskatoon CST- UTC6]
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Tue & Thu 5 - 6 PM{" "}
+                                            <p className="italic">
+                                                [Toronto EDT - UTC4]
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="dancer">
+                                by <b>Jerusha</b>
+                            </div>
+                        </BatchInfoCard>
+                        <BatchInfoCard>
+                            <div className="genre">
+                                <p> Genre</p>
+                                <b>
+                                    <ul>
+                                        <li>Heels</li>
+                                        <li>Contemporary</li>
+                                        <li>Bollywood</li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="timing">
+                                <p> Timings</p>
+                                <b>
+                                    <ul>
+                                        <li>
+                                            Wed & Fri 5.30 - 6.30 PM{" "}
+                                            <p className="italic">
+                                                [India IST]
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Wed & Fri 3 - 4 PM{" "}
+                                            <p className="italic">
+                                                {" "}
+                                                [Saskatoon CST- UTC6]
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Wed & Fri 5 - 6 PM{" "}
+                                            <p className="italic">
+                                                [Toronto EDT - UTC4]
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="dancer">
+                                by <b>Sejal</b>
+                            </div>
+                        </BatchInfoCard>
+                        <BatchInfoCard>
+                            <div className="genre">
+                                <p> Genre</p>
+                                <b>
+                                    <ul>
+                                        <li>Fitness</li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="timing">
+                                <p> Timings</p>
+                                <b>
+                                    <ul>
+                                        <li>
+                                            Mon Wed & Fri 7 - 8 PM{" "}
+                                            <p className="italic">
+                                                [India IST]
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="dancer">
+                                by <b>Suneira</b>
+                            </div>
+                        </BatchInfoCard>
+                        <BatchInfoCard>
+                            <div className="genre">
+                                <p> Genre</p>
+                                <b>
+                                    <ul>
+                                        <li>Bollywood</li>
+                                        <li>Open Style</li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="timing">
+                                <p> Timings</p>
+                                <b>
+                                    <ul>
+                                        <li>
+                                            Saturday 5 PM - 6 PM{" "}
+                                            <p className="italic">
+                                                [India IST]
+                                            </p>
+                                        </li>
+                                        <li>
+                                            Sunday 9 AM - 10 AM{" "}
+                                            <p className="italic">
+                                                [India IST]
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </b>
+                            </div>
+                            <div className="dancer">
+                                by <b>Suneira</b>
+                            </div>
+                        </BatchInfoCard>
+                    </BatchInfoWrapper>
+                </Container>
+            </Section>
+            <Section className="register-background">
+                <Container>
+                    <SectionTitle className="center">
+                        REGISTER NOW!
+                    </SectionTitle>
+                    <RegisterBodySection>
+                        <div>
+                            <p className="title"> India batch </p>
+                            <Button
+                                onClick={() => {
+                                    window.open(
+                                        "https://forms.gle/fA9tmC7cfXiE3S8z6",
+                                        "window",
+                                        "toolbar=no, menubar=no, resizable=yes"
+                                    );
+                                }}
+                                style={{
+                                    color: "#fff",
+                                    backgroundColor: "#090c19 ",
+                                }}
+                            >
+                                Click here
+                            </Button>
+                        </div>
+                        <div>
+                            <p className="title"> Canada batch </p>
+                            <Button
+                                onClick={() => {
+                                    window.open(
+                                        "https://forms.gle/tzbrACBpMtdNRCrj9",
+                                        "window",
+                                        "toolbar=no, menubar=no, resizable=yes"
+                                    );
+                                }}
+                                style={{
+                                    color: "#fff",
+                                    backgroundColor: "#090c19 ",
+                                }}
+                            >
+                                Click here
+                            </Button>
+                        </div>
+                    </RegisterBodySection>
+                </Container>
+            </Section>
+            <Section>
+                <Container>
                     <SectionTitle>CHECKOUT OUR VIDEOS</SectionTitle>
                     <VideosWrapper>
                         {youTubeVideos.map((item) => {
@@ -155,6 +394,28 @@ const Home = (props) => {
                             );
                         })}
                     </VideosWrapper>
+                </Container>
+            </Section>
+            <Section className="register-background">
+                <Container>
+                    <SectionTitle className="center">Testimonials</SectionTitle>
+                    <SectionDescription className="center">
+                        Our students love us! Read what they have to say below.
+                    </SectionDescription>
+                    <TestimonialsSection>
+                        {testimonials.map((testimonial) => {
+                            return (
+                                <div className="box">
+                                    <div className="message">
+                                        {testimonial.message}
+                                    </div>
+                                    <div className="name">
+                                        {testimonial.name}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </TestimonialsSection>
                 </Container>
             </Section>
         </React.Fragment>

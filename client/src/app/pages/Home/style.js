@@ -13,6 +13,10 @@ export const HomeBanner = styled.div`
     & .logo {
         display: flex;
         align-items: center;
+        > img {
+                max-height: 250px;
+                object-fit: contain;
+            }
     }
     & .picture {
         display: flex;
@@ -57,6 +61,24 @@ export const HomeBanner = styled.div`
             }
         }
     }
+
+
+    @media (max-width: 425px) {
+        min-height: 200px;
+        & .logo {
+            > img {
+                max-height: 80px;
+                object-fit: contain;
+            }
+        }
+        & .picture {
+            > img {
+                height: 130px;
+                width: 210px;
+                object-fit: contain;
+            }
+        }
+    }
 `;
 
 export const TranslateLeft = styled.img`
@@ -82,6 +104,11 @@ export const Section = styled.div`
         background-color: ${(props) => props.theme.colors.primary};
         color: ${(props) => props.theme.colors.white};
     }
+
+    &.register-background {
+        background-color: ${(props) => props.theme.colors.tertiary};
+        color: ${(props) => props.theme.colors.white};
+    }
 `;
 
 export const SectionTitle = styled.div`
@@ -90,6 +117,22 @@ export const SectionTitle = styled.div`
     font-weight: 800;
     display: flex;
     padding-bottom: 10px;
+
+    &.center {
+        justify-content: center;
+    }
+`;
+
+export const SectionDescription = styled.div`
+    margin: 10px auto 10px;
+    font-size: 22px;
+    display: flex;
+    padding-bottom: 10px;
+
+    &.center {
+        justify-content: center;
+        text-align: center;
+    }
 `;
 
 export const SectionBody = styled.div`
@@ -152,6 +195,12 @@ export const VideosWrapper = styled.div`
     & > div {
         transform: translateZ(-939px) perspective(1210px) rotateY(-327deg)
             scale(1) translateY(10.2847px);
+    }
+
+    @media (max-width: 425px) {
+        & > div {
+            transform: none;
+        }
     }
 `;
 
@@ -284,7 +333,7 @@ export const InstructorCard = styled.div`
         width: 100%;
         height: 100%;
         border-radius: 6px;
-        object-fit: contain;
+        object-fit: cover;
     }
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -292,8 +341,12 @@ export const InstructorCard = styled.div`
     overflow: hidden;
 
     & .nameTag {
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 10px 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 100%
+        );
+        padding: 90px 0 10px;
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -301,5 +354,114 @@ export const InstructorCard = styled.div`
         font-size: 18px;
         font-weight: 600;
         text-align: center;
+    }
+`;
+
+export const RegisterBodySection = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: space-between;
+    grid-gap: 20px;
+
+    & > div {
+        border: 1px solid #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .title {
+        font-size: 28px;
+        font-weight: 600;
+    }
+`;
+
+export const TestimonialsSection = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    grid-gap: 20px;
+
+    & > .box .message {
+        border: 1px solid #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    & .message::after {
+        content: "";
+        position: absolute;
+        right: 30px;
+        bottom: -24px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-width: 12px 15px;
+        border-top-color: #fff;
+    }
+    & .name {
+        margin: 20px;
+        text-align: right;
+        font-weight: 600;
+    }
+`;
+
+export const BatchInfoWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-gap: 15px;
+`;
+
+export const BatchInfoCard = styled.div`
+    border: 1px solid #fff;
+    border-top: 6px solid ${(props) => props.theme.colors.tertiary};
+    border-radius: 6px;
+    padding: 20px 20px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    ul {
+        list-style: circle;
+        margin-left: 20px;
+    }
+    & .genre {
+        font-size: 16px;
+        min-height: 90px;
+        b {
+            font-weight: 600;
+        }
+    }
+
+    & .timing {
+        min-height: 125px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        & ul {
+            font-size: 14px;
+        }
+    }
+
+    & .italic {
+        font-style: italic;
+        font-size: 10px;
+    }
+
+    & .dancer {
+        margin: auto -20px 0;
+        padding: 10px 20px 10px;
+        border-top: 1px solid #fff;
+        border-radius: 0 0 6px 6px;
+        background-color: ${(props) => props.theme.colors.white};
+        color: ${(props) => props.theme.colors.primary};
+        text-align: right;
+        font-size: 20px;
+        font-style: italic;
+
+        b {
+            font-weight: 800;
+        }
     }
 `;

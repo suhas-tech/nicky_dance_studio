@@ -12,28 +12,36 @@ import {
 
 import NP_LOGO from "@images/npLogo.png";
 
+import ContactModal from "@components/ContactModal";
+
+import NP from "@svg/NP";
+
 const Header = (props) => {
     const history = useHistory();
+
+    const [contactOpen, updateContactOpen] = useState(false);
+
+    const handleClose = () => {
+        updateContactOpen(false);
+    };
 
     return (
         <HeaderWrapper>
             <Logo onClick={() => history.push("/")}>
-                <img src={NP_LOGO} alt="Logo" />
+                <NP />
+                {/* <img src={NP_LOGO} alt="Logo" /> */}
             </Logo>
 
-            <Nav >
-                <ul>
-                    <li>
-                        <NavLink
-                            exact
-                            className="navLink"
-                            activeClassName="selectedLink"
-                            to="/"
-                        >
-                            Home
-                        </NavLink>
-                    </li>
-                    {/* <li>
+            <Nav>
+                <NavLink
+                    exact
+                    className="navLink"
+                    activeClassName="selectedLink"
+                    to="/"
+                >
+                    Home
+                </NavLink>
+                {/* <li>
                         <NavLink
                             exact
                             className="navLink"
@@ -43,7 +51,6 @@ const Header = (props) => {
                             Dance Class
                         </NavLink>
                     </li> */}
-                </ul>
             </Nav>
 
             <NavLogin>
@@ -59,8 +66,11 @@ const Header = (props) => {
                 >
                     Register
                 </NavButton> */}
-                <ContactUs>Contact us</ContactUs>
+                <ContactUs onClick={() => updateContactOpen(true)}>
+                    Contact us
+                </ContactUs>
             </NavLogin>
+            <ContactModal open={contactOpen} handleClose={handleClose} />
         </HeaderWrapper>
     );
 };

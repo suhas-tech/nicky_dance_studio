@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.div`
     position: relative;
-    min-height:400px;
+  
 
     @media (min-width: 769px) {
+        min-height:400px;
         & .card {
         position: relative;
         width:100%;
@@ -90,10 +91,11 @@ export const CardWrapper = styled.div`
 
 
     @media (max-width: 768px) {
+        min-height:300px;
         & .card {
         position: relative;
         width:100%;
-        height:400px;
+        height:300px;
         background: #232323;
         border-radius: 20px;
         overflow: hidden;
@@ -111,7 +113,7 @@ export const CardWrapper = styled.div`
     & .card .image-box .text {
         position: absolute;
         font-size: 190px;
-        top: -15%;
+        
         color: #fff;
         
         transition: color 0.5s ease;
