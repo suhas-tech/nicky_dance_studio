@@ -2,23 +2,23 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.1",
-  "hash": "0a50fc4269eec3100d59",
+  "hash": "bf59cb1bd886e4b99d22",
   "publicPath": "",
   "outputPath": "/home/suhas/Suhas/nicky/client/build/",
   "assetsByChunkName": {
     "vendors~Login~Register": "vendors~Login~Register.02c78401ad.js",
-    "Home": "Home.ee8aa69482.js",
+    "Home": "Home.2ad4076853.js",
     "Login": "Login.31a9110f34.js",
     "PageNotFound": "PageNotFound.4542e49dfa.js",
     "Register": "Register.a8653f34aa.js",
-    "main": "main.529b363723.js",
+    "main": "main.db77df2130.js",
     "vendor": "vendor.dfea2a7cc7.js",
     "vendors~Home": "vendors~Home.74d146cb58.js"
   },
   "assets": [
     {
-      "name": "Home.ee8aa69482.js",
-      "size": 14622,
+      "name": "Home.2ad4076853.js",
+      "size": 14623,
       "chunks": [
         1
       ],
@@ -137,7 +137,7 @@
       "emitted": false
     },
     {
-      "name": "main.529b363723.js",
+      "name": "main.db77df2130.js",
       "size": 27075,
       "chunks": [
         5
@@ -202,7 +202,7 @@
       ],
       "assets": [
         "vendor.dfea2a7cc7.js",
-        "main.529b363723.js"
+        "main.db77df2130.js"
       ],
       "children": {},
       "childAssets": {}
@@ -216,7 +216,7 @@
       ],
       "assets": [
         "vendor.dfea2a7cc7.js",
-        "main.529b363723.js"
+        "main.db77df2130.js"
       ],
       "children": {},
       "childAssets": {}
@@ -228,7 +228,7 @@
       ],
       "assets": [
         "vendors~Home.74d146cb58.js",
-        "Home.ee8aa69482.js"
+        "Home.2ad4076853.js"
       ],
       "children": {},
       "childAssets": {}

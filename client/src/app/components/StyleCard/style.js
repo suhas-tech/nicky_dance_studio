@@ -110,7 +110,7 @@ export const CardWrapper = styled.div`
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 400px;
         border: 2px solid  ${(props) => props.theme.colors.primary};
 
     }
