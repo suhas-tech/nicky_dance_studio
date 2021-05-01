@@ -78,8 +78,10 @@ const Home = (props) => {
                     <SectionBody>
                         <div className="text">
                             <p className="highlight">
-                                At Nicky Pinto Studio, we Vibe differently!
+                                We strive to help accomplish your goals one step
+                                at a time
                             </p>
+                            <p>At Nicky Pinto Studio, we Vibe differently!</p>
 
                             <p>
                                 We are a community of professional and inspiring
