@@ -23,7 +23,7 @@ app.use(cookieParser());
 //   }
 // });
 
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "../client", "build")));
 
 app.get("/files/:id", function (req, res) {
   res.sendFile(path.join(__dirname, "files", req.params.id));
