@@ -31,12 +31,13 @@ const UAndI = () => {
                         <div className="heading">Breathe India</div>
                         <div>
                             In the current scenario in India, those affected by
+                            In the current scenario in India, those affected by
                             Covid-19 are facing an uphill battle. There are
                             severe shortages in key medical supplies like oxygen
                             cylinders for those who are battling the virus from
                             their homes. There is also a drastic lack of
-                            information on basic information like availability
-                            of hospital beds and ambulance services.
+                            information on availability of hospital beds and
+                            ambulance services.
                         </div>
                         <div className="action">
                             <Button
