@@ -31,7 +31,6 @@ const UAndI = () => {
                         <div className="heading">Breathe India</div>
                         <div>
                             In the current scenario in India, those affected by
-                            In the current scenario in India, those affected by
                             Covid-19 are facing an uphill battle. There are
                             severe shortages in key medical supplies like oxygen
                             cylinders for those who are battling the virus from
