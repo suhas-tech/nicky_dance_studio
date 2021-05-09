@@ -75,7 +75,6 @@ const Home = (props) => {
                     </ul>
                 </Area>
             </HomeBanner>
-            <UAndI />
 
             <Section>
                 <Container>
@@ -430,6 +429,8 @@ const Home = (props) => {
                     </VideosWrapper>
                 </Container>
             </Section>
+            <UAndI />
+
             <Section className="register-background">
                 <Container>
                     <SectionTitle className="center">Testimonials</SectionTitle>
