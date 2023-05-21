@@ -54,3 +54,9 @@ exports.authenticate = async (req, res) => {
     }
   });
 };
+
+
+exports.slack = async (req, res) => {
+  console.log(req);
+  
+}

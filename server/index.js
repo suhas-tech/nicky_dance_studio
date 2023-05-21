@@ -22,7 +22,10 @@ app.use(cookieParser());
 //     console.log(`Successfully connected to ${mongo_uri}`);
 //   }
 // });
-
+app.post("/api/slack-action-server", (req, res) => {
+  console.log(req.body.challenge)
+  res.status(200).send({challenge :req.body.challenge})
+})
 app.use(express.static(path.join(__dirname, "build")));
 
 app.get("/*", function (req, res) {
